@@ -1,0 +1,28 @@
+///////////////////////////////////////// SQL QUERIES///////////////////
+
+///////////////////////// user table creation//////////////////////
+
+create table register(farmer_id number(5) primary key,first_name varchar(15) not null,last_name varchar(15) not null,gender varchar(6) not null,
+date_of_birth date not null, father_name varchar(20) not null,phone_no number(10) not null,email_id varchar(20) not null,aadhar_no number(12) not null,
+home_address varchar(30) not null,crop_name varchar(15) not null, crop_size number(6) not null, state varchar(15) not null, district varchar(15) not null, 
+mandal varchar(15) not null,village varchar(15) not null,password varchar(15) not null, pincode number(6) );
+
+/////////////////////////// construction table creation//////////////////////////
+
+create table construction(construction_id number(5) primary key,company_name varchar(20) not null,cost_per_acre number(8) not null,email_id varchar(20) mot null
+mobile_no number(10) not null, tank_dept number(5) not null);
+
+//////////////////////////feeds table creation/////////////////////////////
+
+create table feed(food_id number(15) primary key,company_name varchar(20) not null,company_address varchar(30) not null,email_id varchar(20) mot null,
+mobile_no number(10) not null,food_name varchar(15) not null,cost_per_ton number(8) not null);
+
+/////////////////////////seeds  table creation///////////////////
+
+create table seeds(seed_id number(15) primary key,company_name varchar(20) not null,company_address varchar(30) not null,email_id varchar(20) mot null,
+mobile_no number(10) not null,seed_name varchar(15) not null,price_per_seed number(8) not null);
+
+/////////////////////marketing table creation///////////////////////
+
+create table marketing(market_id number(15) primary key,company_name varchar(20) not null,company_address varchar(30) not null,email_id varchar(20) mot null,
+mobile_no number(10) not null,product_name varchar(15) not null,price_per_kg number(8) not null);
